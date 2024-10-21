@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: airbnb-cereal-app-book;
+    src:url(../public/assets/fonts/airbnb-cereal-app-bold.ttf)
+}
+@font-face {
+    font-family: airbnb-cereal-app-light;
+    src:url(../fonts/airbnb-cereal-app-light.ttf)
+}
+@font-face {
+    font-family: nimbus-sans;
+    src:url(../fonts/NimbusSanL-Reg.otf)
+}
+@font-face {
+    font-family: airbnb-cereal-app-bold;
+    src:url(../fonts/airbnb-cereal-app-bold.ttf)
+}
+@font-face {
+    font-family: airbnb-cereal-app-medium;
+    src:url(../fonts/airbnb-cereal-app-medium.ttf)
+}
+.a-a {
+    font-family: airbnb-cereal-app-light;
+    font-weight: 500;
+}
+.a-b {
+    font-family: airbnb-cereal-app-bold;
+    font-weight: 700;
+}
+.a-m {
+    font-family: airbnb-cereal-app-medium;
+    font-weight: 500;
+}
+.b1 {
+    border: 2px solid #fff;
+}
+.b2 {
+    border: 1px solid #D4D1D1;
+}
+.b3 {
+    border: 2px solid #D4D1D1;
+}
+.b4 {
+    text-decoration: underline;
+    text-decoration-color: #CA4F16;
+}
+.h-sect:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* New box shadow on hover */
+}
+.h-sect {
+    transition: box-shadow 0.3s ease; /* Transition for smooth animation */
+    text-align: center;
+    /* line-height: 200px; */
+    padding: 30px 0px 30px 0px;
+    cursor: pointer; /* Optional: Change cursor to pointer on hover */
+    border-radius: 20px;
+}
+.button-1 {
+    background-color: #FFC20E;
+}
+.button-1:hover {
+  cursor: pointer;
+  background-image: linear-gradient(90deg,#c68a06 0%,#ee9100 100%)!important;
+}
+.image-with-text {
+    position: relative;
+    width: 100%; /* Adjust to desired width */
+    max-width: 600px; /* Adjust to desired maximum width */
+    margin: 0 auto; /* Center align if needed */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Hide overflow to contain absolutely positioned elements */
+}
+.box-1 {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(5px);
+}
+.bg-h1 {
+    background: url(../img/h-1.png) no-repeat;
+    background-size: contain;
+    background-position: 521px 319px;
+}
+.bx-1 {
+    border-radius: 14px;
+    /* opacity: 0.04; */
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px #e6e6e9;
+}
+.round-1 {
+    border-radius: 28.777px 3.289px;
+}
+.line-g {
+    border-radius: 3.289px;
+    border: 2.467px solid #D5DDDD;
+}
+.line-g2 {
+    border-radius: 3.29px;
+    background: rgba(32, 207, 198, 0.08);
+}
+.line-g3 {
+    border-radius: 28.784px 3.29px;
+    border: 2.467px solid #D5DDDD;
+}
+.line-g4 {
+    border-radius: 28.784px 3.29px;
+    background: #20ADAD;
+}
+.bg-s5{
+  background: url(../img/s5-bg.png) no-repeat;
+  background-size: 40%;
+  background-position: right bottom;
+}
+.cr-bg {
+  border-radius: 14px;
+  border: 1px solid #FFF;
+  background: #FFF;
+  box-shadow: 0px 10px 70px 0px rgba(2, 2, 38, 0.06);
+}
+.car-1{
+  background: url(../img/car-1.png) no-repeat;
+  background-size: 30%;
+  background-position: left bottom;
+}
+.car-2{
+  background: url(../img/car-2.png) no-repeat;
+  background-size: 30%;
+  background-position: right top;
+}
+
+
+
+
+
+
+
+
+.text-container h2,
+.text-container p {
+    margin: 0;
+    font-size: 24px; /* Adjust font sizes */
+    line-height: 1.4; /* Adjust line height */
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    /* width: 372px!important; */
+    /* height: 372px!important; */
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.b5 {
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.1);
+}
+
+.b6 {
+    border: 2px solid #000;
+}
+
+
+/* Style for the zoom section */
+.zoom-section {
+  position: relative;
+  overflow: hidden; /* Hide overflow to create the zoom effect */
+
+}
+
+/* Style for the image */
+.zoom-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Style for the caption */
+.zoom-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.zoom-section:hover .zoom-image {
+  transform: scale(1.2); /* Adjust scale as needed */
+}
+
+/* Show caption on hover */
+.zoom-section:hover .zoom-caption {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0px; */
+  /* background-color: #333; */
+  color: #fff;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  /* color: #fff; */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.cta a {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+
+
+input:focus {
+  border: 0px solid rgb(11, 10, 10); /* Border color when focused */
+  outline: none; /* Remove outline */
+}
+  
+  
+  
+  /* Media query for mobile */
+  @media screen and (max-width: 768px) {
+   
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+    .car-1{
+      background: url(../img/car-1.png) no-repeat;
+      background-size: 100%;
+      background-position: bottom right;
+    }
+    .bg-s5{
+      background: url(../img/mb-bg-1.png) no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
+  }
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .tab-view-1 {
+      max-width: 200px!important;
+      top: -49%!important;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 744px;
+    }
+}
+
+@media (max-width: 744px) {
+    .container {
+        max-width: 488px;
+    }
+}
+
+@media (max-width: 488px) {
+    .container {
+        width: 100%;
+    }
+  
+
+    .hero li {
+        margin-bottom: 0px;
+    }
+
+}
